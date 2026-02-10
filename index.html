@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urban Barber | Paris</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">URBAN<span>BARBER</span></div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Accueil</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="gallery.html">Galerie</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div><div class="line2"></div><div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+    <div id="bookingModal" class="modal">
+    <div class="modal-content">
+        <h2 style="color: black; margin-bottom: 10px;">RÉSERVATION</h2>
+        <div class="underline"></div>
+        <form id="resForm">
+            <input type="text" placeholder="Votre Nom" required>
+            <input type="tel" placeholder="Téléphone" required>
+            <input type="date" required style="margin-bottom: 20px;">
+            <button type="submit" class="btn" style="width: 100%;">Confirmer</button>
+        </form>
+        <button id="closeModal" style="margin-top: 15px; background: none; border: none; cursor: pointer; text-decoration: underline; color: black;">Fermer</button>
+    </div>
+</div>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content fade-in">
+                <h1>Urban Barber</h1>
+                <p>Coiffure et soins hommes – Paris</p>
+                <button class="btn" id="openModal">Réserver maintenant</button>
+            </div>
+        </section>
+    </main>
+
+    <div id="modal-reservation" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Réserver un créneau</h2>
+            <div class="underline"></div>
+            <form id="reservation-form">
+                <div class="form-group">
+                    <label>Service souhaité</label>
+                    <select required>
+                        <option value="coupe">Coupe Signature - 30€</option>
+                        <option value="barbe">Taille de Barbe - 20€</option>
+                        <option value="complet">Le Pack Urban (Cheveux + Barbe) - 45€</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Date</label>
+                    <input type="date" required>
+                </div>
+                <button type="submit" class="btn">Confirmer la demande</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
